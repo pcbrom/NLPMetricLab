@@ -4,7 +4,7 @@ from utils import detect_han_characters, load_file
 from tokenizer import tokenize_with_jieba
 from metrics import compute_metrics
 
-st.set_page_config(page_title="TextMetricLab", layout="wide")
+st.set_page_config(page_title="NLPMetricLab", layout="wide")
 st.title("📊 NLP Metric Lab")
 st.markdown("[Powered by PCBrom & LiWeigang](https://github.com/pcbrom/NLPMetricLab)")
 
