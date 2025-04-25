@@ -53,7 +53,7 @@ else:
         weights = (0.25, 0.25, 0.25, 0.25)
 
     if st.button("Compute Metrics"):
-        data = pd.DataFrame([[col1_input, col2_input]], columns=["original_text", "en_zh"])
-        result_df, results_summary = compute_metrics(data, "original_text", "en_zh", metrics_selected, weights)
+        data = pd.DataFrame([[col1_input, col2_input]], columns=["original_text", "another_text"])
+        result_df, results_summary = compute_metrics(data, "original_text", "another_text", metrics_selected, weights)
         st.subheader("Results")
         st.dataframe(result_df)

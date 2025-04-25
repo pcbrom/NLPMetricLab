@@ -44,7 +44,7 @@ def calculate_semantic_similarity(original: str, translated: str):
 # Apply all metrics row-wise
 def calculate_metrics_for_row(row, weights=(0.25, 0.25, 0.25, 0.25)):
     original_text = row['original_text']
-    translated_text = row['en_zh']
+    translated_text = row['another_text']
 
     original_tokens = tokenize_chinese_jieba(original_text)
     translated_tokens = tokenize_chinese_jieba(translated_text)
@@ -59,7 +59,7 @@ def calculate_metrics_for_row(row, weights=(0.25, 0.25, 0.25, 0.25)):
 
 # DataFrame-wide metric computation
 def compute_metrics(df: pd.DataFrame, col1: str, col2: str, metrics_selected: list[str], weights=(0.25, 0.25, 0.25, 0.25)) -> tuple[pd.DataFrame, dict]:
-    df = df.rename(columns={col1: 'original_text', col2: 'en_zh'})  # adapt to internal names
+    df = df.rename(columns={col1: 'original_text', col2: 'another_text'})  # adapt to internal names
     df_metrics = df.apply(lambda row: calculate_metrics_for_row(row, weights=weights), axis=1)
 
     # Merge results back
