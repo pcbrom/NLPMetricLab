@@ -9,7 +9,7 @@ st.title("📊 NLP Metric Lab")
 st.markdown("[Powered by PCBrom & LiWeigang](https://github.com/pcbrom/NLPMetricLab)")
 
 # Tabs
-tab1, tab2 = st.tabs(["Data Input", "Methodology"])
+tab1, tab2, tab3 = st.tabs(["Data Input", "Methodology", "Arxiv"])
 
 with tab1:
     option = st.radio("Choose input method:", ["📂 Upload Excel/CSV", "⌨️ Manual Input"])
@@ -84,4 +84,16 @@ with tab2:
     st.subheader("Semantic Similarity")
     st.markdown("""
         Semantic similarity measures the degree to which two texts carry the same meaning. This implementation uses TF-IDF vectors and cosine similarity.
+    """)
+
+with tab3:
+    st.header("The Paradox of Poetic Intent in Back-Translation: Evaluating the Quality of Large Language Models in Chinese Translation")
+    st.markdown("[https://arxiv.org/abs/2504.16286](https://arxiv.org/abs/2504.16286)")
+    st.markdown("Li Weigang, Pedro Carvalho Brom")
+    st.write("""
+        The rapid advancement of large language models (LLMs) has reshaped the landscape of machine translation, yet challenges persist in preserving poetic intent, cultural heritage, and handling specialized terminology in Chinese-English translation. 
+        This study constructs a diverse corpus encompassing Chinese scientific terminology, historical translation paradoxes, and literary metaphors. 
+        Utilizing a back-translation and Friedman test-based evaluation system (BT-Fried), we evaluate BLEU, CHRF, TER, and semantic similarity metrics across six major LLMs (e.g., GPT-4.5, DeepSeek V3) and three traditional translation tools. 
+        Key findings include: (1) Scientific abstracts often benefit from back-translation, while traditional tools outperform LLMs in linguistically distinct texts; (2) LLMs struggle with cultural and literary retention, exemplifying the "paradox of poetic intent"; (3) Some models exhibit "verbatim back-translation", reflecting emergent memory behavior; (4) A novel BLEU variant using Jieba segmentation and n-gram weighting is proposed. 
+        The study contributes to the empirical evaluation of Chinese NLP performance and advances understanding of cultural fidelity in AI-mediated translation.
     """)
