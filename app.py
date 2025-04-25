@@ -64,21 +64,21 @@ with tab1:
 
 with tab2:
     st.header("Methodology")
-    st.subheader("BLEU (Bilingual Evaluation Understudy)")
+    st.subheader("Bilingual Evaluation Understudy (BLEU)")
     st.markdown("""
         BLEU is an algorithm for evaluating the quality of text which has been machine-translated from one natural language to another. 
         Quality is considered to be the correspondence between a machine's output and that of a human: "the closer a machine translation is to a professional human translation, the better it is". 
         BLEU was one of the first metrics to claim a high correlation with human judgements of quality
     """)
 
-    st.subheader("CHRF (character n-gram F-score)")
+    st.subheader("Character n-gram F-score (CHRF)")
     st.markdown("""
         CHRF is a metric for evaluating the quality of machine-generated text. It calculates a character n-gram F-score between the generated text and a reference text.
     """)
 
-    st.subheader("TER (Translation Edit Rate)")
+    st.subheader("Translation Edit Rate (TER)")
     st.markdown("""
-        Translation Edit Rate (TER) is an error metric for machine translation that measures the number of edits required to change a system output into one of the references.
+        TER is an error metric for machine translation that measures the number of edits required to change a system output into one of the references.
     """)
 
     st.subheader("Semantic Similarity")
