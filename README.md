@@ -2,7 +2,7 @@
 
 **Multilingual NLP Metric Evaluation Toolkit**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PENDING.svg)](https://doi.org/10.5281/zenodo.PENDING)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18759228.svg)](https://doi.org/10.5281/zenodo.18759228)
 
 ## Overview
 
@@ -55,9 +55,9 @@ If you use this tool, please cite:
   title   = {NLPMetricLab: Multilingual NLP Metric Evaluation Toolkit (v1.0)},
   author  = {Weigang, Li and Brom, Pedro Carvalho},
   year    = {2025},
-  url     = {https://github.com/pcbrom/NLPMetricLab},
-  license = {CC-BY-NC-SA-4.0},
-  note    = {Zenodo DOI pending}
+  doi     = {10.5281/zenodo.18759228},
+  url     = {https://doi.org/10.5281/zenodo.18759228},
+  license = {CC-BY-NC-SA-4.0}
 }
 ```
 
