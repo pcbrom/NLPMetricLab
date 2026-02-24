@@ -1,0 +1,40 @@
+{
+    "title": "NLPMetricLab: Multilingual NLP Metric Evaluation Toolkit (v1.0)",
+    "description": "Companion evaluation system for the study 'Paradox of Poetic Intent in Back-Translation'. Provides interactive computation of BLEU, CHRF, TER, and Semantic Similarity on paired texts with native Chinese support (Han detection, Jieba tokenization). Published as a Streamlit web application.",
+    "upload_type": "software",
+    "creators": [
+        {
+            "name": "Weigang, Li",
+            "affiliation": "TransLab, Department of Computer Science, University of Brasilia",
+            "orcid": "0000-0003-1826-1850"
+        },
+        {
+            "name": "Brom, Pedro Carvalho",
+            "affiliation": "Department of Mathematics, Federal Institute of Brasilia",
+            "orcid": "0000-0002-1288-7695"
+        }
+    ],
+    "keywords": [
+        "NLP metrics",
+        "BLEU",
+        "CHRF",
+        "TER",
+        "semantic similarity",
+        "back-translation",
+        "Chinese NLP",
+        "Streamlit",
+        "evaluation toolkit"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "related_identifiers": [
+        {
+            "identifier": "10.1631/FITEE.2500298",
+            "relation": "isSupplementTo",
+            "resource_type": "publication-article",
+            "scheme": "doi"
+        }
+    ],
+    "references": [
+        "Weigang, L. and Brom, P. C. (2025). Paradox of Poetic Intent in Back-Translation: Evaluating the Quality of Large Language Models in Chinese Translation. FITEE. doi:10.1631/FITEE.2500298"
+    ]
+}
